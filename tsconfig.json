@@ -8,7 +8,7 @@
         "src/app/auth/*"
       ],
       "@heroes/*": [
-        "src/app/heores/pages*"
+        "src/app/heroes/*"
       ],
       "@shared/*": [
         "src/app/shared/*"
