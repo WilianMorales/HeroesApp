@@ -4,11 +4,11 @@ import { Component, OnInit } from '@angular/core';
   selector: 'app-layout-page',
   templateUrl: './layout-page.component.html',
   styles: [ `
-    .grip{
+    .grid{
       height: 100%;
-      display: flex;
       justify-content: center;
       align-items: center;
+      margin: 0;
     } `
   ]
 })
