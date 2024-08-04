@@ -29,7 +29,7 @@ const routes: Routes = [
         component: ListPageComponent
       },
       {
-        path: 'by/:id',
+        path: ':id',
         component: HeroPageComponent
       },
       {
