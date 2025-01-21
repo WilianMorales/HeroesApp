@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
+import { FormControl, FormGroup, Validators } from '@angular/forms';
 
 @Component({
   selector: 'app-new-hero-page',
@@ -6,11 +7,21 @@ import { Component, OnInit } from '@angular/core';
   styles: [
   ]
 })
-export class NewHeroPageComponent implements OnInit {
+export class NewHeroPageComponent {
 
-  constructor() { }
+  public heroForm = new FormGroup ({
+    id: new FormControl(''),
+    superhero: new FormControl('', Validators.required),
+    publisher: new FormControl(''),
+    alter_ego: new FormControl(''),
+    first_appearance: new FormControl(''),
+    character: new FormControl(''),
+    alt_img: new FormControl(''),
+  });
 
-  ngOnInit(): void {
-  }
+  public publishers = [
+    { id: 'DC Comics', desc: 'DC - Comics' },
+    { id: 'Marvel Comics', desc: 'Marvel - Comics' }
+  ]
 
 }
