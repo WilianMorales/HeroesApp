@@ -166,6 +166,15 @@
       "alter_ego": "Norrin Radd",
       "first_appearance": "The Fantastic Four #48",
       "characters": "Norrin Radd"
+    },
+    {
+      "id": "icfv1RC",
+      "superhero": "Deadpool",
+      "publisher": "Marvel Comics",
+      "alter_ego": "Ryan Reynolds",
+      "first_appearance": "The New Mutants #98",
+      "characters": "Deadpool, Venompool, Psylocke",
+      "alt_img": "https://i.pinimg.com/736x/d8/6f/c9/d86fc929fc0f26a7198cf8ea2636684b.jpg"
     }
   ]
 }
