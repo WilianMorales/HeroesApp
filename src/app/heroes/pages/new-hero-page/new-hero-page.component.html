@@ -1,7 +1,7 @@
 <h1>
-  Editar / Agregar
+  {{ currentHero.id ? 'Editar': 'Agregar'}}
   héroe
-  <small>Superman</small>
+  <small *ngIf="currentHero.id">/ {{ currentHero.superhero }}</small>
 </h1>
 
 <mat-divider class="mb-3"></mat-divider>
@@ -13,7 +13,7 @@
 
         <form class="grid" [formGroup]="heroForm" (ngSubmit)="onSubmit()">
           <mat-form-field class="col-12 sm:col-6">
-            <mat-label>Super héroe</mat-label>
+            <mat-label for="superhero">Super héroe</mat-label>
             <input
               matInput
               type="text"
@@ -77,10 +77,13 @@
 
         <div class="flex justify-content-between">
           <button
+            *ngIf="currentHero.id"
             mat-flat-button
-            color="warn">
+            color="warn"
+            (click)="onDeleteHero()">
             Eliminar
           </button>
+          <span></span>
 
           <button
             mat-flat-button
